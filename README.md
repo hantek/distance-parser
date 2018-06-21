@@ -64,14 +64,15 @@ python dp.py --cuda --datapath ../data/ctb_liusplit --savepath ../ctbresults --e
 ## Pre-trained models
 We provide pre-trained models for the convenience of users. The following steps download the two pre-trained models to your repo:
 ```
+mkdir results/
 cd results/
 wget http://lisaweb.iro.umontreal.ca/transfert/lisa/users/linzhou/distance_parser_pretrained_model/ctb.th
 wget http://lisaweb.iro.umontreal.ca/transfert/lisa/users/linzhou/distance_parser_pretrained_model/ptb.th
 ```
 To re-evaluate the pre-trained models, run:
 ```
-cd results/
-python demo.py --cuda --datapath ../data/ptb/ --filename ptb
-python demo.py --cuda --datapath ../data/ctb_liusplit/ --filename ctb
+cd src/
+python demo.py --cuda --datapath ../data/ptb/ --filename ptb     # this command reproduces the 92.0 F1 score for PTB
+python demo.py --cuda --datapath ../data/ctb_liusplit/ --filename ctb     # this command reproduces the 86.5 F1 score for CTB
 ```
 Note that the file has to be in the `results` folder inorder for the `demo.py` script to load it automatically.

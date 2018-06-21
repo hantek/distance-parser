@@ -72,4 +72,3 @@ To re-evaluate the pre-trained models, run:
 python demo.py --cuda --datapath ../data/ptb/ --filename ptb
 python demo.py --cuda --datapath ../data/ctb_liusplit/ --filename ctb
 ```
-You may need [Git LFS](https://git-lfs.github.com/) to download the pre-trained models.

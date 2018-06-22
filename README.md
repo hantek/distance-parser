@@ -31,7 +31,7 @@ To preprocess the CTB, please follow the steps below:
 
 1. Download and unzip the Chinese Treebank dataset from https://wakespace.lib.wfu.edu/handle/10339/39379
 
-2. If you don't have any data in NLTK before, download some to initialize your `nltk_data` folder:
+2. If you don't have any corpus data in NLTK before, download some to initialize your `nltk_data` folder, such as:
 ```
 python -c "import nltk; nltk.download('ptb')"
 ``` 
@@ -41,7 +41,7 @@ python -c "import nltk; nltk.download('ptb')"
 python ctb.py --ctb /path/to/your/ctb8.0/data --output data/ctb_liusplit
 ```
 
-4. Integrate the Stanford Tagger for data preprocessing. Download the Stanford tagger from https://nlp.stanford.edu/software/stanford-postagger-full-2018-02-27.zip, and edit the lines 10~11 in file `src/datacreate_ctb.py` to your tagger path.
+4. Integrate the Stanford Tagger for data preprocessing. Download the Stanford tagger from https://nlp.stanford.edu/software/stanford-postagger-full-2018-02-27.zip and unzip it.
 
 5. Run the following command to generate the preprocessed files:
 ```
